@@ -1,0 +1,104 @@
+.diet-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('./assets/diet-plan.jpg') no-repeat center center/cover;
+}
+
+.diet-form {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(113, 2, 2, 0.523);
+  width: 380px;   /* Fixed width, not full page */
+  text-align: center;
+}
+
+.diet-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #ff9800;
+  text-shadow: 0px 0px 8px #ff5722;
+}
+
+/* ✅ Common style for inputs and select */
+.diet-input,
+.diet-form select {
+  display: block;
+  width: 100%;       /* Same width */
+  height: 45px;      /* Same height */
+  margin: 8px 2px;
+  padding: 0 2px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  background: #f4f4f4;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.diet-input:focus,
+.diet-form select:focus {
+  border: 2px solid #ff9800;
+  background: #fff;
+}
+
+/* ✅ Submit button same width as inputs */
+.diet-btn {
+  width: 100%;
+  height: 48px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(90deg, #ff512f, #f09819);
+  color: white;
+  transition: 0.3s;
+}
+
+.diet-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #f09819, #ff512f);
+}
+
+.diet-output {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.markdown-container {
+  margin-top: 15px;
+  line-height: 1.6;
+  color: #333;
+  overflow-x: auto;
+}
+
+.markdown-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.markdown-container th,
+.markdown-container td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.markdown-container th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-align: left;
+}
+
+.markdown-container tr:nth-child(even) {
+  background-color: #fafafa;
+}

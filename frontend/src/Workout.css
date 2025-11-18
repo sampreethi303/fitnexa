@@ -1,0 +1,93 @@
+body {
+  /* background: linear-gradient(135deg, #f8fafc, #e2e8f0); */
+  font-family: Arial, sans-serif;
+  background: url("https://png.pngtree.com/background/20230610/original/pngtree-the-gym-scene-where-people-are-sitting-in-a-gym-picture-image_3108802.jpg")
+    center/cover no-repeat;
+}
+
+.workout-container {
+  max-width: 600px;
+  
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  color: #2d3748;
+}
+
+.subtitle {
+  text-align: center;
+  color: #718096;
+  margin-bottom: 20px;
+}
+
+.workout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+input,
+select,
+textarea {
+  margin-top: 5px;
+  padding: 8px 10px;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+
+.workout-display {
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.top-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.right-btns button {
+  margin-left: 10px;
+}
+
+.plan-box {
+  background: #f7fafc;
+  border-radius: 8px;
+  padding: 20px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}

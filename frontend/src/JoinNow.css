@@ -1,0 +1,140 @@
+.join-container { 
+    height: 100vh; 
+    width: 100%; 
+    background: url("./assets/gym-room.jpg") no-repeat center center/cover; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+} 
+.join-container::before { 
+    content: ""; 
+    position: absolute; 
+    inset: 0; 
+    background: rgba(0, 0, 0, 0.65); /* dark overlay */ 
+} 
+.join-form { 
+    position: relative; 
+    z-index: 2; 
+    background: rgba(255, 255, 255, 0.15); /* slightly more visible */ 
+    backdrop-filter: blur(12px); 
+    border-radius: 20px; 
+    padding: 30px 35px; /* little more side padding */ 
+    width: 420px; /* 🔹 increased width */ 
+    color: white; 
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.4); 
+    animation: fadeIn 1s ease-in-out; 
+    display: flex; 
+    flex-direction: column; /* 🔹 Add a clear border so top is visible */ 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+} 
+.join-heading { 
+    text-align: center; 
+    margin-bottom: 20px; 
+    font-size: 26px; 
+    font-weight: bold; 
+    color: #fff; 
+    margin-top: 30px; /* 🔹 space from top edge */ 
+} 
+.join-heading span { 
+    color: #ff6b6b; 
+} 
+.heading-icon { 
+    width: 30px; 
+    height: 30px;
+    object-fit: contain; 
+ /* keep clear */
+}
+.form-group { 
+    display: flex; 
+    flex-direction: column; /* 🟢 label on top, input below */ 
+    margin-bottom: 14px; 
+} 
+.form-group label { 
+    margin-bottom: 6px; 
+    font-weight: 500; 
+    font-size: 15px; 
+} 
+.form-group input, .form-group select { 
+    width: 90%; 
+    align-self: center; 
+    padding: 8px 10px; 
+    border-radius: 8px; 
+    border: none; 
+    outline: none; 
+    color:#333;
+    font-size: 16px; /* 🔹 moderate size */ 
+} 
+.password-field {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 30px;
+  top: 35px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #555;
+}
+.phone-input {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 90%;
+  align-self: center;
+}
+
+.phone-prefix {
+  padding: 8px 10px;
+  background: #eee;
+  color: #333;
+  font-weight: bold;
+  border-right: 1px solid #ccc;
+}
+
+.phone-input input {
+  flex: 1;
+  padding: 8px 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.join-btn { 
+    width: 100%; 
+    padding: 12px; 
+    border: none; 
+    border-radius: 10px; 
+    background: linear-gradient(135deg, #ff6b6b, #ff4757); 
+    color: white; 
+    font-size: 15px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: 0.3s; 
+    margin-top: 8px; 
+} 
+.join-btn:hover { 
+    transform: scale(1.04); 
+} 
+.login-link { 
+    text-align: center; 
+    margin-top: 12px; 
+    font-size: 13px; 
+    color: #ddd; 
+} 
+.login-link a { 
+    color: #ff6b6b; 
+    text-decoration: none; 
+} 
+@keyframes fadeIn { from 
+    { opacity: 0; 
+        transform: translateY(30px); 
+    } 
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+}

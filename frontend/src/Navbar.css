@@ -1,0 +1,48 @@
+.navbar {
+  position: fixed; /* always on top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* keep navbar slim */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px; /* left-right padding only */
+  background: rgba(0, 0, 0, 0.8); /* black cement style */
+  backdrop-filter: blur(10px);
+  z-index: 1000; /* stays above all */
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ff5733;
+}
+
+/* Active highlight */
+.nav-link.active {
+  background: #ff5733;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 8px #ff5733, 0 0 15px #ff5733;
+}

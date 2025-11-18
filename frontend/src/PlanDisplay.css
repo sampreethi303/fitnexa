@@ -1,0 +1,89 @@
+.plan-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 15px;
+  background: #fafafa;
+  min-height: 100vh;
+  /* background: url('./assets/diet-plan.jpg') no-repeat center center/cover; */
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #ff5a36;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.plan-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin: 0 auto;
+}
+
+
+.plan-actions {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.plan-actions button {
+  border: none;
+  background: #f2f2f2;
+  padding: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.plan-actions button:hover {
+  background: #e0e0e0;
+}
+
+.markdown-content {
+  line-height: 1.6;
+  font-size: 15px;
+  color: #333;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3 {
+  color: #ff5a36;
+  margin-top: 25px;
+}
+
+.markdown-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.markdown-content th,
+.markdown-content td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.markdown-content th {
+  background-color: #fbe9e7;
+  color: #222;
+}
+
+.markdown-content strong {
+  color: #000;
+}
